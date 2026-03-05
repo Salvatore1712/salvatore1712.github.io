@@ -1,0 +1,66 @@
+@use "../abstract/variables";
+
+.project-page {
+
+}
+
+#card-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    .card {
+        margin-top: 2dvh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        // border: variables.$debugBorder;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            border-radius: variables.$radius;
+            box-shadow: 0px 0px 5px lightgrey;
+            width: 80%;
+        }
+        
+        .btn {
+            width: auto;
+
+            a{
+                font-size: variables.$fontSize;
+            }
+        }
+        h4 {
+            color: variables.$secondaryColor;
+            font-size: clamp(1.5em, 2dvw, 3em);
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+}
+
+// DESKTOP
+@media (min-width:767px) {
+    #card-box {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .btn {
+        max-width: 25%;
+        
+        a {
+            font-size: 16px;
+        }
+    }
+}
+}

@@ -12,6 +12,9 @@
 // ABOUT PAGE STYLE
 @use "./sections/aboutPage";
 
+// PROJECT PAGE STYLE
+@use "./sections/projectPage";
+
 // CONTACT PAGE STYLE
 @use "./sections/contactPage";
 
@@ -66,4 +69,12 @@ a {
 
 .footer-spacer {
     display: none;
+}
+
+// MEDIA DESKTOP
+@media (min-width: 767px) {
+    #grid-container{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }
