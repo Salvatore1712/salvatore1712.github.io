@@ -117,7 +117,6 @@
     .header {
         display: flex;
         justify-content: space-between;
-        height: auto;
         position: sticky;
         width: 100%;
         padding: 8px 0 8px 0;
@@ -125,7 +124,11 @@
         // border: $debugBorder;
         background-color: variables.$totalWhite;
         // box-shadow: 0px 2px 0px rgb(238, 238, 238);
-        
+        z-index: 1000;
+
+        img {
+            max-width: 250px;
+        }
         
         .menu {
             display: flex;

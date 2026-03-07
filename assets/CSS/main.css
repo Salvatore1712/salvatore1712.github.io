@@ -95,12 +95,15 @@
   .header {
     display: flex;
     justify-content: space-between;
-    height: auto;
     position: sticky;
     width: 100%;
     padding: 8px 0 8px 0;
     top: 0;
     background-color: #fff;
+    z-index: 1000;
+  }
+  .header img {
+    max-width: 250px;
   }
   .header .menu {
     display: flex;
@@ -358,6 +361,19 @@
   margin: 0 auto;
 }
 
+@media (min-width: 1024px) {
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-section .about-title {
+    font-size: clamp(5rem, 75px, 34em);
+  }
+  .about-info p {
+    width: 50%;
+  }
+}
 @media (max-width: 767px) {
   #card-box {
     display: flex;
@@ -531,19 +547,19 @@
   #footer {
     position: relative;
     z-index: 1002;
-    margin-top: auto;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
+    bottom: 0;
+    width: 95%;
     flex-shrink: 0;
-    height: auto;
-    border-radius: 8px 8px 0 0;
+    height: 120px;
   }
   .box-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 10px;
   }
@@ -572,6 +588,7 @@
     color: #000;
     text-align: center;
     padding-top: 10px;
+    width: 100%;
   }
   .box-info-footer a {
     color: #000;

@@ -51,6 +51,23 @@
 
 // DESKTOP
 @media (min-width:1024px) {
+
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .about-title {
+            font-size: clamp(5rem, 75px, 34em);
+        }
+    }
+
+    .about-info {
+        
+        p {
+            width: 50%;
+        }
+    }
     
 }
 
