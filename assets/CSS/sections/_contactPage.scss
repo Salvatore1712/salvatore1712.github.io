@@ -3,18 +3,20 @@
 @use "../abstract/variables";
 
 .form-title {
-        font-size: clamp(4rem, 5dvw, 4.5rem);
-        color: black;
-        span {
-            color: variables.$secondaryColor;
-            font-weight: 700;
-        }
+    padding-top: 2rem;
+    font-size: clamp(4rem, 5dvw, 4.5rem);
+    color: black;
+    span {
+        color: variables.$secondaryColor;
+        font-weight: 700;
+    }
 }
 
 .info-form{
         font-size: 20px;
         width: 80%;
         padding-top: 20px;
+        padding-bottom: 20px;
         margin: 0 auto;
 }
 .form {
@@ -27,7 +29,7 @@
     border-radius: 20px;
     width: 90%;
     max-width: 500px;
-    height: 70dvh;
+    height: 70%;
 
     .fieldset {
         width: 100%;
@@ -81,5 +83,9 @@
     .info-form {
         width: 60%;
         font-size: calc(variables.$fontSize * 1.5);
+    }
+    .form {
+        height: auto;
+        margin-top: 20px;
     }
 }
