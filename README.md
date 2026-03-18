@@ -1,7 +1,7 @@
 # HTML & CSS Project by Salvatore De Roma
+![preview] (./assets/img/svg/logo_deroma_salvatore.svg)
 
 ## Overview
-<p class="overview">
 This project is a personal portfolio website developed using HTML and CSS. It showcases various sections including Home, About, CV, Projects, and Contact. The design is modern, responsive, and aims to provide a clear presentation of skills, experiences, and contact information.</p>
 
 ## Features
