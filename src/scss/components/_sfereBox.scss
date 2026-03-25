@@ -1,0 +1,31 @@
+@use "../abstract/variables";
+
+.word__box {
+    display: flex;
+    // border: 1px solid salmon;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+
+    &__check {
+        width: 30px;
+        height: 30px;
+        background-color: variables.$colorBlue;
+        color: variables.$totalWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: clamp(1.8rem, 35px, 3rem);
+        padding: 0;
+        font-weight: bold;
+        line-height: 60%;
+    }
+}
