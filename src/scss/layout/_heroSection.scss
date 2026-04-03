@@ -18,11 +18,12 @@
     
 
     &__title {
-        font-size: clamp(4rem, 1.5rem + 9.9091vw, 12rem);
+        font-size: clamp(3rem, 1.5rem + 8vw, 10rem);
         word-break: break-all;
         line-height: 0.8em;
         font-weight: bold;
         animation: animationShow 2s cubic-bezier(.7,.46,.73,.82) forwards;
+        z-index: 0;
     }
 
     &__title--small {
