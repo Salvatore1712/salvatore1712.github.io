@@ -8,6 +8,8 @@
 // IMPORT LAYOUT STYLE
 @use "./layout/header" as header;
 @use "./layout/footerStyle" as footer;
+@use "./layout/heroSection" as hero_section;
+@use "./components/cardStyle" as card_style;
 
 
 // IMPORT PAGES STYLE
