@@ -1,5 +1,6 @@
-// STYLE BUTTON
 @use "../abstract/variables" as variables;
+
+// STYLE BUTTON
 .btn {
     display: flex;
     align-items: center;
@@ -11,16 +12,19 @@
     background-color: variables.$colorBlue;
     font-size: 22px;
     color: variables.$totalWhite;
-    box-shadow: 4px 4px 4px rgba($color: #000000, $alpha: 0.25);
+    box-shadow: 4px 4px 6px rgba($color: #000000, $alpha: 0.25);
+    transition: 300ms ease;
     cursor: pointer;
 
     a {
         color: white;
     }
-}
 
-.btn:hover {
-    background-color: variables.$colorBlueDark;
+    &:hover {
+        background-color: variables.$colorBlueDark;
+        box-shadow: 4px 4px 6px rgba($color: #000000, $alpha: 0.35);
+        transition: 300ms ease;
+    }
 }
 
 // <button class="btn"><a href="#">LINK</a></button>
