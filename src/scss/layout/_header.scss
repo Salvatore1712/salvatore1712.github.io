@@ -48,7 +48,7 @@
     width: 32px;
     height: 4px;
     background-color: variables.$colorBlue;
-    z-index: 2;
+    z-index: 200;
     cursor: pointer;
 
     &::after {
@@ -82,7 +82,7 @@
     //MOBILE
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     width: 100dvw;
     text-align: center;
     background-color: variables.$totalWhite;

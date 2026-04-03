@@ -1,4 +1,4 @@
-
+@use "../abstract/transactions" as transactions;
 // HERO SECTION
 //MOBILE
 .hero {
@@ -22,6 +22,7 @@
         word-break: break-all;
         line-height: 0.8em;
         font-weight: bold;
+        animation: animationShow 2s cubic-bezier(.7,.46,.73,.82) forwards;
     }
 
     &__title--small {
