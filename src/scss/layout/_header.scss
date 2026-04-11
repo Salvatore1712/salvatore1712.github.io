@@ -132,8 +132,8 @@
             width: 100%;
             list-style-type: none;
             padding: 10px 0 10px 0;
-
-            
+            font-weight: bold;
+            font-size: 22px;
 
             // TABLET
             @media (min-width:767px) {
@@ -141,16 +141,8 @@
                 text-align: center;
                 height: auto;
                 width: 100%;
+                text-transform: lowercase;
                 // border: 1px solid salmon;
-            }
-
-            &:hover {
-                background-color: variables.$colorBlue;
-
-                @media (min-width:767px) {
-                    // color: variables.$colorBlue;
-                    text-decoration: underline;
-                    background-color: variables.$totalWhite;
                 }
             }
         }
@@ -164,24 +156,22 @@
 
             @media (min-width:767px) {
                     font-weight: 300;
-                    text-transform: lowercase;
+                    
                 }
 
             &:hover {
 
                 @media (min-width:767px) {
-                    color: variables.$totalBlack;
+                    // color: variables.$totalBlack;
                 }
 
                 @media (min-width:1024px) {
-                    color: variables.$totalBlack;
                     text-decoration: underline;
                 }
             }
         }
     }
 
-}
 
 .active {
     text-decoration: none;
