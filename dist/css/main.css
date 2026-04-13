@@ -132,7 +132,11 @@
     text-align: center;
     height: auto;
     width: 100%;
+    font-weight: 100;
     text-transform: lowercase;
+  }
+  .menu__list__items:hover {
+    text-decoration: underline;
   }
 }
 .menu__link {

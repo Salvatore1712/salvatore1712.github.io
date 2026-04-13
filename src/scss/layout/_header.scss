@@ -141,8 +141,13 @@
                 text-align: center;
                 height: auto;
                 width: 100%;
+                font-weight: 100;
                 text-transform: lowercase;
                 // border: 1px solid salmon;
+
+                &:hover {
+                    text-decoration: underline;
+                }
                 }
             }
         }
