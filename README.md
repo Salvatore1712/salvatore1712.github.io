@@ -1,6 +1,6 @@
 # Portfolio Website | Salvatore De Roma
 
-![Logo del progetto](./src/img/svg/logo02_white.svg)
+![Logo del progetto](./assets/img/svg/logo02_white.svg)
 
 Portfolio personale multipagina realizzato in HTML e SCSS per presentare profilo, progetti e contatti in una struttura chiara, responsive e modulare.
 
@@ -19,7 +19,7 @@ L'obiettivo del progetto è creare un sito portfolio statico che:
 - Sito multipagina con pagine HTML separate.
 - Layout responsive per mobile, tablet e desktop.
 - Header con menu mobile e navigazione adattiva.
-- SCSS organizzato per `abstract`, `components` e `sections`.
+- SCSS organizzato per `abstract`, `base`, `components`, `layout` e `pages`.
 - CSS compilato in `dist/css/main.css`.
 - Componenti riutilizzabili, come il bottone `.btn`.
 
@@ -37,32 +37,57 @@ L'obiettivo del progetto è creare un sito portfolio statico che:
 ├── CV_page.html
 ├── README.md
 ├── about_page.html
+├── assets
+│   └── img
+│       ├── favicon
+│       │   ├── apple-touch-icon.png
+│       │   ├── favicon-96x96.png
+│       │   ├── favicon.ico
+│       │   ├── favicon.svg
+│       │   ├── site.webmanifest
+│       │   ├── web-app-manifest-192x192.png
+│       │   └── web-app-manifest-512x512.png
+│       ├── social_icon
+│       │   ├── facebook.png
+│       │   ├── instagram-2.png
+│       │   └── linkedin-2.png
+│       ├── svg
+│       │   ├── image_seo_salvatoreDeRoma.jpg
+│       │   ├── logo02_white.svg
+│       │   ├── logo_deroma_salvatore.svg
+│       │   ├── logo_deroma_salvatore_small.svg
+│       │   ├── logo_deroma_salvatore_white.svg
+│       │   ├── logo_deroma_salvatore_white2.jpg
+│       │   └── logo_deroma_salvatore_white2.svg
+│       ├── foto_salvatore_deRoma.jpg
+│       ├── jsCounterCopertina.jpg
+│       └── project_placeHolder.jpg
 ├── contact_page.html
-├── index.html
-├── project_page.html
 ├── dist
 │   └── css
 │       ├── main.css
 │       └── main.css.map
+├── index.html
+├── project_page.html
 └── src
-    ├── img
-    │   ├── favicon
-    │   ├── social_icon
-    │   ├── svg
-    │   ├── foto_salvatore_deRoma.jpg
-    │   ├── js_copertina_progetto.jpg
-    │   └── project_placeHolder.jpg
-    ├── js
     └── scss
         ├── abstract
+        │   ├── _transactions.scss
         │   └── _variables.scss
+        ├── base
+        │   ├── _normalize.scss
+        │   └── _reset.scss
         ├── components
-        │   └── _button.scss
-        ├── sections
+        │   ├── _button.scss
+        │   └── _cardStyle.scss
+        ├── layout
+        │   ├── _footerStyle.scss
+        │   ├── _header.scss
+        │   └── _heroSection.scss
+        ├── pages
         │   ├── _abouteMePage.scss
         │   ├── _contactPage.scss
         │   ├── _cvPage.scss
-        │   ├── _header.scss
         │   ├── _homePage.scss
         │   └── _projectPageStyle.scss
         └── main.scss
@@ -70,11 +95,15 @@ L'obiettivo del progetto è creare un sito portfolio statico che:
 
 ## Organizzazione SCSS
 
-Il file entrypoint è `src/scss/main.scss`, che importa i moduli del progetto:
+Il file entrypoint e `src/scss/main.scss`, che importa i moduli del progetto:
 
 - `abstract/_variables.scss`: variabili globali di colori, font e radius.
+- `abstract/_transactions.scss`: transizioni e timing riutilizzabili.
+- `base/_reset.scss` e `base/_normalize.scss`: base di stile cross-browser.
 - `components/_button.scss`: componenti riutilizzabili.
-- `sections/*.scss`: stili specifici delle varie sezioni e pagine.
+- `components/_cardStyle.scss`: card riutilizzabili.
+- `layout/*.scss`: stili condivisi per header, hero e footer.
+- `pages/*.scss`: stili specifici delle varie pagine.
 - `dist/css/main.css`: output compilato pronto per il browser.
 
 ## Convenzione BEM Negli SCSS
